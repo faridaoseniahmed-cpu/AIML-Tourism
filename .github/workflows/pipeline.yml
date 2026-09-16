@@ -69,7 +69,7 @@ jobs:
           nohup mlflow ui --host 0.0.0.0 --port 5000 &  # Run MLflow UI in the background
           sleep 5  # Wait for a moment to let the server starts
       - name: Model Building
-        run: python tourism_project/model_bilding/train.py   # Replace blanks with the path to your model training script.
+        run: python tourism_project/model_building/train.py   # Replace blanks with the path to your model training script.
       - name: Commit Trained Model
         run: |
           git config user.name "github-actions[bot]"
